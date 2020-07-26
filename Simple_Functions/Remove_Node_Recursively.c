@@ -26,7 +26,7 @@ int Remove_Node_R(int Data, Element **heap)
 		Nodo_Linked = (*heap);
 		(*heap) = ((*heap)->Next);
 		free(Nodo_Linked);
-		printf("Se elimino el dato: [%d], de la lista enlazada\n", Data);
+		printf("Se elimino el dato: [%d] de la lista enlazada\n", Data);
 		return (0);
 	}
 	else
