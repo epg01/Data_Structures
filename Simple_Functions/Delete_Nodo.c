@@ -32,7 +32,7 @@ void Delete_Nodo(int Data, Element **heap)
 			printf("El dato  no encontrado es: [%d]\n", Data);
 		        return ;
 		}
-		Nodo_Previous->Next = Nodo_Previous->Next;
+		Nodo_Previous->Next = Nodo_Next->Next;
 		free(Nodo_Next);
 	}
 }
