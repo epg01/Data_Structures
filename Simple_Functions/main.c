@@ -17,5 +17,12 @@ int main(void)
 		Insert_Order_Nodo(&head, Array[Index++]);
 
 	print_Linked_ListR(head, 0);
+
+	printf("Pasamos a la eliminacion del nodo\n");
+
+	for (Index = 0; head; Index++)
+		Delete_Nodo(Index, &head);
+
+	print_Linked_ListR(head, 0);
 	return (0);
 }
