@@ -15,5 +15,6 @@ void Insert_Order_Nodo(Element **Pointer_To_Pointer_Head, int Data);
 Element *Create_Nodo(int Data);
 void Delete_Nodo(int Data, Element **heap);
 int Remove_Node_R(int Data, Element **heap);
-
+unsigned char Count_Number_Nodo(Element *Pointer_To_List);
+unsigned char Count_Number_Item_List_R(Element *Pointer_To_List, unsigned char Account);
 #endif
