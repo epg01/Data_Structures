@@ -17,4 +17,6 @@ void Delete_Nodo(int Data, Element **heap);
 int Remove_Node_R(int Data, Element **heap);
 unsigned char Count_Number_Nodo(Element *Pointer_To_List);
 unsigned char Count_Number_Item_List_R(Element *Pointer_To_List, unsigned char Account);
+Element *Find_A_Node(Element *head, int Data);
+Element *Find_A_Node_Recursively(Element *head, int Data, int Account);
 #endif
