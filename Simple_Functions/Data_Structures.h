@@ -21,4 +21,5 @@ Element *Find_A_Node(Element *head, int Data);
 Element *Find_A_Node_Recursively(Element *head, int Data, int Account);
 int Insert_A_Nodo(Element *Nodo_Previous, Element *Nodo_A_Insert);
 int Delete_A_Linked_List(Element **Pointer_A_Pointer_Head);
+int Delete_A_Linked_List_R(Element **head);
 #endif
