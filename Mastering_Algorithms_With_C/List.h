@@ -28,9 +28,24 @@ typedef struct List_
 }List;
 
 /*
+ *  Macro utilizadas en esta estructura de datos tipo de estructura: (Linked List).
+ */
+
+#define List_Size(list)                 ((list)->Size)
+#define List_Next(element)              ((element)->Data)
+#define List_Head(list)                 ((lista)->Head)
+#define List_Is_Head(list, element)     ((element) == list->Head ? 1 : 0)
+#define List_Tail(list)                 ((list)->Tail)
+#define List_Is_Tail(element)           ((element)->Next == NULL ? 1 : 0)
+#define List_Data(element)              ((element)->Data)
+
+
+/*
  * Funciones utilizadas.
  */
 
 void List_Init(List *list, void (*Destroy)(void *Data));
+void List_Destroy(List *list);
+int List_Rem_Next(List *list, ListElement *element, void **Data);
 
 #endif
