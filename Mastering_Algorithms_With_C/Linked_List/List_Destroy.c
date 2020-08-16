@@ -8,6 +8,7 @@ void List_Destroy(List *list)
 	{
 		if ((List_Rem_Next(list, NULL, (void **)&Data) == 0) && (list->Destroy != NULL))
 		{
+			printf("Elemento a eliminar =\t%d\n", *(int *)Data);
 			list->Destroy(Data);
 		}
 	}
