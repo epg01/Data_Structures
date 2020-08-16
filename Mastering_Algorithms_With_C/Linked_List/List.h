@@ -44,8 +44,16 @@ typedef struct List_
  * Funciones utilizadas.
  */
 
-void List_Init(List *list, void (*Destroy)(void *Data));
-void List_Destroy(List *list);
-int List_Rem_Next(List *list, ListElement *element, void **Data);
+void
+List_Init(List *list, void (*Destroy)(void *Data));
+
+void
+List_Destroy(List *list);
+
+int
+List_Rem_Next(List *list, ListElement *element, void **Data);
+
+int
+List_Init_Next(List *list, ListElement *element, void *Data);
 
 #endif
