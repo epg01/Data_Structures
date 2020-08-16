@@ -21,11 +21,11 @@ int List_Rem_Next(List *list, ListElement *element, void **Data)
 		*Data       = list->Head->Data;
 		Old_Element = list->Head;
 		list->Head  = list->Head->Next;
-	}
 
-	if (List_Size(list) == 1)
-	{
-		list->Tail = NULL;
+		if (List_Size(list) == 1)
+		{
+			list->Tail = NULL;
+		}
 	}
 	else
 	{
