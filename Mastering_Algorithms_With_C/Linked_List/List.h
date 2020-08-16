@@ -33,7 +33,7 @@ typedef struct List_
 
 #define List_Size(list)                 ((list)->Size)
 #define List_Next(element)              ((element)->Data)
-#define List_Head(list)                 ((lista)->Head)
+#define List_Head(list)                 ((list)->Head)
 #define List_Is_Head(list, element)     ((element) == list->Head ? 1 : 0)
 #define List_Tail(list)                 ((list)->Tail)
 #define List_Is_Tail(element)           ((element)->Next == NULL ? 1 : 0)
@@ -54,6 +54,6 @@ int
 List_Rem_Next(List *list, ListElement *element, void **Data);
 
 int
-List_Init_Next(List *list, ListElement *element, void *Data);
+List_Ins_Next(List *list, ListElement *element,const  void *Data);
 
 #endif
